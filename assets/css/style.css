@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+}
+@media (max-width:992px) {
+            .mobile_view {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 100%;
+                min-height: 100vh;
+                background-color: lightcyan;
+                transition: 300ms linear;
+            }
+
+            .overflow_hidden {
+                overflow: hidden;
+            }
+
+            .line1,
+            .line2,
+            .line3 {
+                width: 30px;
+                min-height: 3px;
+                background-color: red;
+                transition: 300ms linear;
+            }
+
+            .cross .line1 {
+                transform: rotate(50deg) translate(17px, 14px);
+            }
+
+            .cross .line2 {
+                transform: translateX(-50%);
+                opacity: 0;
+            }
+
+            .cross .line3 {
+                transform: rotate(-50deg) translateY(-50%);
+            }
+        }
